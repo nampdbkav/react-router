@@ -7,10 +7,12 @@ const Footer = ({ countActive, clearComplete }) => {
                 {countActive}
                 <span>: items left</span>
             </div>
-            <div>
-                <button>All</button>
-                <button>ACtive</button>
-                <button>Complete</button>
+            <div style={{ display: 'flex' }}>
+                <nav style={{ display: 'flex' }}>
+                    <button>All</button>
+                    <button>Active</button>
+                    <button>Complete</button>
+                </nav>
                 {clearComplete && (
                     <button>Clear complete</button>
                 )}
